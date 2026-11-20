@@ -35,5 +35,5 @@ lead_form_endpoint: https://formsubmit.co/ajax/oyerunner@gmail.com
 # Paste the UPI ID (looks like name@okhdfcbank) to switch on "Pay with UPI"
 # buttons on every paid plan. Leave it empty ("") to hide them.
 payments:
-  upi_id: ""
+  upi_id: "7204436210@idfcfirst"
   payee_name: Oye Runner                # the name shown in the UPI app
