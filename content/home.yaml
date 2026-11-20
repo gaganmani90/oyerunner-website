@@ -10,6 +10,7 @@ nav:
   - { label: Plans, href: "#plans" }
   - { label: Goal Finder, href: "#finder" }
   - { label: Coach, href: "#coach" }
+  - { label: Tips, href: "#tips" }
   - { label: Run Club, href: "#club" }
   - { label: App, href: "#app" }
 
@@ -56,10 +57,15 @@ coach:
     - { title: Whole runner, text: "Running, strength, mobility, food, water and sleep." }
     - { title: Real life, text: "Early mornings, monsoon backups and travel weeks." }
 
+tips:
+  eyebrow: Coach's corner
+  heading: Straight from Coach Mayank.
+  sub: Short reels with the lessons he learnt the hard way since he started running in 2017. More on Instagram.
+
 club:
   eyebrow: Run Club
   heading: Better together.
-  sub: Group runs, race-day meetups and a community that keeps you showing up.
+  sub: The running community that makes your life better, every day. Group runs, race-day meetups and friends who keep you showing up.
   card_heading: Run with Oye Runner.
   card_text: All paces welcome. Nobody gets left behind, and the chai after is mandatory.
   schedule:                              # "Where" comes from run_club_city in content/site.yaml

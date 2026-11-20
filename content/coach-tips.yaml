@@ -1,0 +1,27 @@
+# ─────────────────────────────────────────────────────────────
+# Oye Runner · "Coach's corner" (Instagram reels with the key points written out)
+# Brought over from the old oyerunner.com page. Add a new reel by copying a block.
+# reel: the Instagram reel link. points: shown as a list. **double stars** = bold.
+# The section heading and intro text are in content/home.yaml → tips.
+# ─────────────────────────────────────────────────────────────
+
+- title: Why did you start running?
+  reel: https://www.instagram.com/reel/ClsrRJBP5KQ/
+  intro: Six pointers for every runner.
+  points:
+    - "**Find your purpose.** Know why you're running today and tomorrow. That's how running becomes a habit you keep."
+    - "**Injuries are part of the process.** Don't panic, see an expert. I had knee pain and low bone density when I started; I have neither today, and I never stopped running out of fear."
+    - "**Listen to your body.** Pushing out of your comfort zone is good, but learn to read your body and adjust."
+    - "**Start today.** Nobody starts with all the knowledge and gear. You learn on the way, like in a new job. That's how I started in 2017."
+    - "**Discipline over motivation.** If I skip a run, I'm not disciplined enough, so I remind myself of what running changed for me."
+    - "**Find your circle.** Surround yourself with runners. Like colleagues at work, we do better together."
+  closing: Motivation has to come from within. Embrace the process and have fun!
+
+- title: Why enough protein matters
+  reel: https://www.instagram.com/reel/Cl3_8zEK23F/
+  intro: Weight training and enough protein keep your muscle, even in the weeks you're off training.
+  points:
+    - "**Lift, even on a break.** Strength sessions hold on to the muscle running builds."
+    - "**Never skip protein.** Protein intake miss nahi karna hai, calories kam-zyada bhale hi ho jaye."
+    - "**Stay on track.** Rukna nahi hai."
+  closing: ""

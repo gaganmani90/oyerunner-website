@@ -136,6 +136,16 @@ const PlanSchema = z
   })
   .refine((p) => !!p.level !== !!p.event, { message: 'needs either "level" (free plan) or "event" (race plan), not both' });
 
+const CoachTipsSchema = z.array(
+  z.strictObject({
+    title: text,
+    reel: z.string().regex(/^https:\/\/(www\.)?instagram\.com\//, "must be an Instagram link starting with https://www.instagram.com/"),
+    intro: optText,
+    points: z.array(text).min(1),
+    closing: optText,
+  }),
+);
+
 const PdfGuideSchema = z.strictObject({
   sections: z.array(z.strictObject({ heading: text, points: z.array(text).min(1) })),
   closing: optText,
@@ -156,6 +166,7 @@ const HomeSchema = z.strictObject({
   plans: z.strictObject({ eyebrow: text, heading: text, sub: line, free_tab: text, paid_tab: text, plan_inside: text }),
   finder: z.strictObject({ eyebrow: text, heading: text, sub: line }),
   coach: z.strictObject({ eyebrow: text, heading: text, paragraphs: z.array(text), principles: z.array(titled) }),
+  tips: z.strictObject({ eyebrow: text, heading: text, sub: line }),
   club: z.strictObject({
     eyebrow: text,
     heading: text,
@@ -228,6 +239,7 @@ export function loadContent() {
   const faq = check(FaqSchema, readYaml("faq.yaml", problems), "faq.yaml", problems);
   const events = check(EventsSchema, readYaml("events.yaml", problems), "events.yaml", problems);
   const pdfGuide = check(PdfGuideSchema, readYaml("pdf-guide.yaml", problems), "pdf-guide.yaml", problems);
+  const coachTips = check(CoachTipsSchema, readYaml("coach-tips.yaml", problems), "coach-tips.yaml", problems);
 
   const plans = [];
   const planDir = path.join(CONTENT_DIR, "plans");
@@ -287,6 +299,7 @@ export function loadContent() {
     benefits,
     faq,
     pdfGuide,
+    coachTips,
     allEvents: events,
     events: shownEvents,
     featuredEvent: shownEvents.find((e) => e.featured) ?? null,

@@ -1,0 +1,30 @@
+---
+// "Coach's corner": Instagram reels from the coach with their key points (content/coach-tips.yaml).
+import { heading, rich } from "../lib/content.mjs";
+const { c } = Astro.props;
+const t = c.home.tips;
+---
+{c.coachTips.length > 0 && (
+  <section class="b-black" id="tips">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">{t.eyebrow}</p>
+        <h2 class="h2" set:html={heading(t.heading)} />
+        {t.sub && <p class="sub">{t.sub}</p>}
+      </div>
+      <div class="tips">
+        {c.coachTips.map((tip, i) => (
+          <article class={"tip" + (i % 2 === 1 ? " red" : "")}>
+            <p class="eyebrow">Instagram reel</p>
+            <h3>{tip.title}</h3>
+            {tip.intro && <p class="tip-intro">{tip.intro}</p>}
+            <ol class="tip-list">{tip.points.map((p) => <li set:html={rich(p)} />)}</ol>
+            {tip.closing && <p class="tip-close">{tip.closing}</p>}
+            <a class={"btn" + (i % 2 === 1 ? " btn-white" : "")} href={tip.reel} target="_blank" rel="noopener">▶ Watch on Instagram</a>
+          </article>
+        ))}
+      </div>
+      <p class="fine" style="margin-top:20px">More reels at <a href={c.site.contact.instagram_url} target="_blank" rel="noopener">@{c.site.contact.instagram_handle}</a>.</p>
+    </div>
+  </section>
+)}

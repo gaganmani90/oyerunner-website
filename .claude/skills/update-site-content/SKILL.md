@@ -22,9 +22,10 @@ All words on the site live in `content/`. Find the right file with the map in `C
 - **Instagram:** `content/site.yaml → contact.instagram_url` and `instagram_handle` (without @).
 - **Coach photo:** save the image as `public/images/coach.jpg` (ask them to attach it; portrait, at least 800 px wide), then set `content/site.yaml → coach.photo: /images/coach.jpg`.
 - **Reel on a "Why run" card:** paste the Instagram reel link into `reel:` of that card in `content/benefits.yaml`. A "Watch the reel" button appears.
+- **Coach's corner reel:** copy a block in `content/coach-tips.yaml`: `title`, `reel` (Instagram link), `intro`, 2-6 `points`, optional `closing`. Write the points from the reel's caption in the coach's voice. Delete a block to remove a reel; with none left, the section hides.
 - **FAQ:** add `- q: …` / `  a: …` in `content/faq.yaml`. Order in the file = order on the site.
 - **Run club city / schedule:** `content/site.yaml → run_club_city`; schedule rows in `content/home.yaml → club.schedule`.
-- **Menu links:** `content/home.yaml → nav` (only `#why`, `#plans`, `#finder`, `#coach`, `#club`, `#app`, `#faq`, `#start` exist on the page).
+- **Menu links:** `content/home.yaml → nav` (only `#why`, `#plans`, `#finder`, `#coach`, `#tips`, `#club`, `#app`, `#faq`, `#start` exist on the page).
 
 ## Don't
 

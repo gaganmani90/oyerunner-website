@@ -242,6 +242,21 @@ legend em{font-style:normal;color:var(--red);margin-right:8px}
 .principles strong{display:block;color:var(--black);font-size:16px}
 @media (max-width:480px){.principles{grid-template-columns:1fr}}
 
+/* coach's corner (Instagram reels) */
+.tips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+@media (max-width:860px){.tips{grid-template-columns:minmax(0,1fr)}}
+.tip{border-radius:28px;padding:32px;display:flex;flex-direction:column;gap:14px;background:#111;box-shadow:0 0 0 1px var(--line-dark)}
+.tip.red{background:var(--red);box-shadow:none}
+.tip.red .eyebrow{color:var(--cream)}
+.tip h3{font-size:clamp(26px,3vw,34px)}
+.tip-intro{font-size:17px;font-weight:600}
+.tip-list{margin:0;padding-left:22px;display:grid;gap:10px;font-size:15.5px;color:var(--on-dark-2)}
+.tip-list strong{color:var(--white)}
+.tip.red .tip-list{color:rgba(255,255,255,.9)}
+.tip-close{font-size:15.5px;font-weight:600}
+.tip .btn{align-self:start;margin-top:6px}
+@media (max-width:420px){.tip{padding:24px}}
+
 /* club */
 .club{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
 @media (max-width:860px){.club{grid-template-columns:1fr}}

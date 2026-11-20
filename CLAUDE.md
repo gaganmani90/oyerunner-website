@@ -30,6 +30,7 @@ Almost every request is a `content/` edit. Read the comments at the top of each 
 | Contact email, Instagram, UPI ID, coach name/photo, run club city | `content/site.yaml` |
 | Hero, Why run heading, Coach bio, Run Club, Start band, App, footer, form options | `content/home.yaml` |
 | "Six reasons to start" cards + Instagram reel links | `content/benefits.yaml` |
+| Coach's corner: Instagram reels with key points (section text in `home.yaml → tips`) | `content/coach-tips.yaml` |
 | Paid coaching tab: prices, features | `content/pricing.yaml` |
 | Race tabs (Navy Run, TMM 2027…) and countdowns | `content/events.yaml` |
 | Every training plan (free + race), one file each | `content/plans/<plan-id>.yaml` |
