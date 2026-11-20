@@ -42,8 +42,8 @@ npm run build      # full site in dist/
 
 ## Publishing
 
-Pushing to `main` runs `.github/workflows/deploy.yml`: it checks the content, builds and publishes to GitHub Pages.
-Pull requests are checked but not published.
+Every push to `main` runs `.github/workflows/deploy.yml`: it checks the content, builds and publishes to GitHub Pages.
+There is no pull-request step; work is committed straight to `main`. If the check fails, nothing is published.
 
 One-time setup on GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 For the custom domain, add `oyerunner.com` under **Settings → Pages → Custom domain** and point the domain's DNS at GitHub Pages.

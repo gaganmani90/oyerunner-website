@@ -1,13 +1,11 @@
-# Checks every change and publishes the site to GitHub Pages.
-# - Push to main  → check content, build, publish (about 2 minutes).
-# - Pull request  → check content and build only (nothing is published).
-# If any step fails, the live site stays on the previous version.
-name: Check and publish website
+# Publishes the site to GitHub Pages on every push to main (about 2 minutes).
+# The content check and build run first: if anything fails, nothing is published
+# and the live site stays on the previous version.
+name: Publish website
 
 on:
   push:
     branches: [main]
-  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -16,7 +14,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages-${{ github.ref }}
+  group: pages
   cancel-in-progress: false
 
 jobs:
@@ -31,7 +29,6 @@ jobs:
       - run: npm ci
       - name: Read GitHub Pages address
         id: pages
-        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
       - name: Check content and build
         run: npm run build
@@ -39,12 +36,10 @@ jobs:
           SITE_URL: ${{ steps.pages.outputs.origin }}
           SITE_BASE: ${{ steps.pages.outputs.base_path }}
       - uses: actions/upload-pages-artifact@v3
-        if: github.event_name != 'pull_request'
         with:
           path: dist
 
   deploy:
-    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:
