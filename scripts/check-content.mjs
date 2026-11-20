@@ -8,7 +8,7 @@ try {
   console.log(
     `✓ All good. ${c.plans.length} plans (${freePlans} free, ${c.plans.length - freePlans} race), ` +
       `${c.events.length} event tab(s), ${c.pricing.one_time.items.length + c.pricing.subscriptions.items.length} paid options, ` +
-      `${c.faq.length} FAQs. UPI payments: ${c.upiEnabled ? "ON (" + c.site.payments.upi_id + ")" : "off (no UPI ID in content/site.yaml)"}.`,
+      `${c.faq.length} FAQs. UPI payments: ${c.upiEnabled ? "ON" : "off (no UPI ID in content/site.yaml)"}.`,
   );
 } catch (e) {
   if (e instanceof ContentError) {

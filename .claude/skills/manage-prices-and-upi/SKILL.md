@@ -43,8 +43,9 @@ Delete its block. Confirm with the person first.
 1. Ask for the exact UPI ID if they haven't given it (looks like `name@okhdfcbank`, `98xxxxxx@ybl`). Read it back to them before saving: a typo sends money to the wrong place.
 2. Set `content/site.yaml → payments.upi_id: "their-id@bank"` and, if they want, `payee_name` (the name shown in the UPI app).
 3. Run `npm run check`; it rejects IDs that don't look like UPI IDs.
-4. With an ID set, every paid card gets a "Pay Rs. X by UPI" button. It opens a sheet with a QR code (computers), an "Open UPI app" button (phones), the UPI ID with a Copy button, and "I've paid · send my details", which opens the form with a UPI transaction ID field. The small print switches to `note_with_upi` in `content/pricing.yaml`.
-5. Suggest they test once with the smallest plan from their own phone before announcing it.
+4. With an ID set, every paid card gets a "Pay Rs. X by UPI" button. It opens a sheet with a QR code, and on phones "Save QR code" (to scan from the gallery) and "Open UPI app", plus "I've paid · send my details", which opens the form with a UPI transaction ID field. The small print switches to `note_with_upi` in `content/pricing.yaml`.
+5. The UPI ID is **never shown as text** on the site (owner's request: the current one contains a phone number). Don't add it to page text, the FAQ, the changelog, commit messages or anything printed in build logs. It still sits inside the QR codes and payers' apps show it, so if they want it fully private, suggest a UPI ID without a phone number.
+6. Suggest they test once with the smallest plan from their own phone before announcing it.
 
 Good to know: some UPI apps block "pay with amount" links to personal UPI IDs for security. If people report that, a business/merchant UPI ID (e.g. from a GPay for Business or PhonePe Business account) works best. The QR code and the copy-UPI-ID fallback still work either way.
 

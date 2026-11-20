@@ -332,6 +332,8 @@ footer{padding:64px 0 120px;font-size:14px;color:var(--on-dark-2)}
 .msg code{font-family:var(--font);font-weight:700}
 [data-only-paid][hidden]{display:none}
 
+.app-card{max-width:640px;min-height:0}
+
 /* UPI payment sheet */
 .pay-amt{font-size:44px;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
 .pay-amt small{font-size:16px;font-weight:500;color:var(--char);letter-spacing:0}

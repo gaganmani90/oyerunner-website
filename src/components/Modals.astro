@@ -49,14 +49,13 @@ const f = c.home.start_form;
       <div class="pay-grid">
         <div class="qr" id="pay-qr" aria-label="UPI QR code"></div>
         <div class="pay-steps">
-          <p><strong>On a computer:</strong> scan the code with GPay, PhonePe, Paytm or any UPI app.</p>
-          <p class="only-touch"><strong>On this phone:</strong> tap Open UPI app below.</p>
-          <p>Or pay to this UPI ID:</p>
-          <div class="upi-id"><span>{c.site.payments.upi_id}</span><button class="btn btn-sm btn-black" type="button" id="pay-copy" data-copy={c.site.payments.upi_id}>Copy</button></div>
+          <p><strong>Scan</strong> this code with GPay, PhonePe, Paytm or any UPI app. The amount fills in by itself.</p>
+          <p class="only-touch"><strong>Paying on this phone?</strong> Tap <strong>Save QR code</strong>, then in your UPI app tap Scan and pick the photo from your gallery. Or try <strong>Open UPI app</strong>.</p>
         </div>
       </div>
       <div class="pay-actions">
-        <a class="btn only-touch" id="pay-open" href="#">Open UPI app</a>
+        <a class="btn only-touch" id="pay-save" href="#" download="oye-runner-upi-qr.png">Save QR code</a>
+        <a class="btn btn-ghost only-touch" id="pay-open" href="#">Open UPI app</a>
         <button class="btn btn-ghost" type="button" id="pay-done">I've paid · send my details</button>
         <p class="fine">After paying, send your details with the UPI transaction ID so {c.site.coach.short_name} can start your plan.</p>
       </div>

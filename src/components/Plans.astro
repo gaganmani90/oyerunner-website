@@ -14,14 +14,18 @@ const groups = [
   { key: "once", ...c.pricing.one_time, per: "one-time" },
   { key: "subs", ...c.pricing.subscriptions },
 ];
+// The UPI ID is never printed as text on the page: it only goes into the QR codes
+// and the "Open UPI app" link (stored encoded, decoded when tapped).
 const qr = {};
 for (const g of groups)
   for (const [i, it] of g.items.entries()) {
     it.key = `${g.key}-${i}`;
     it.label = priceLabel(it);
     if (c.upiEnabled) {
-      it.upi = upiLink(c.site.payments, it.price, `Oye Runner ${it.name}`);
-      qr[it.key] = await QRCode.toString(it.upi, { type: "svg", margin: 1, errorCorrectionLevel: "M" });
+      const link = upiLink(c.site.payments, it.price, `Oye Runner ${it.name}`);
+      it.upiCode = Buffer.from(link).toString("base64");
+      it.qrPng = await QRCode.toDataURL(link, { width: 640, margin: 3, errorCorrectionLevel: "M" });
+      qr[it.key] = await QRCode.toString(link, { type: "svg", margin: 1, errorCorrectionLevel: "M" });
     }
   }
 ---
@@ -109,7 +113,7 @@ for (const g of groups)
                 <div class="actions">
                   {c.upiEnabled && (
                     <button class={"btn" + (it.featured ? " btn-white" : "")} type="button" data-pay={it.key}
-                      data-name={it.name} data-amount={it.price} data-per={it.per || ""} data-label={it.label} data-req={it.request} data-upi={it.upi}>
+                      data-name={it.name} data-amount={it.price} data-per={it.per || ""} data-label={it.label} data-req={it.request} data-code={it.upiCode} data-qrpng={it.qrPng}>
                       Pay Rs. {rupees(it.price)} by UPI
                     </button>
                   )}

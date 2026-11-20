@@ -86,10 +86,8 @@ start:
 app:
   eyebrow: Oye Runner app
   heading: Oye Runner on your home screen.
-  sub: Install it in two taps. It opens full screen like any app, and it's always up to date because it loads the latest plans every time.
-  iphone_steps:
-    - Open **oyerunner.com** in Safari, Chrome or any browser.
-    - Tap the **Share** button, then **Add to Home Screen**, then **Add**.
+  sub: Install it in two taps on Android or your computer. It opens full screen like any app, and it's always up to date because it loads the latest plans every time.
+  # This section is hidden on iPhone and iPad (there's no install button for them).
   android_text: Tap **Install**. If it doesn't appear, open your browser's menu and choose **Install app** or **Add to Home screen**. Works in Chrome, Edge, Samsung Internet and Firefox.
   install_button: Install Oye Runner
 

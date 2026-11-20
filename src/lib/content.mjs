@@ -181,7 +181,6 @@ const HomeSchema = z.strictObject({
     eyebrow: text,
     heading: text,
     sub: line,
-    iphone_steps: z.array(text),
     android_text: text,
     install_button: text,
   }),

@@ -299,14 +299,12 @@ function openPay(ds) {
   $("#pay-name").textContent = ds.name;
   $("#pay-amt").innerHTML = "Rs. " + Number(ds.amount).toLocaleString("en-IN") + "<small> " + (ds.per ? "/ " + esc(ds.per) : "one-time") + "</small>";
   const tpl = document.getElementById("qr-" + ds.pay); $("#pay-qr").innerHTML = tpl ? tpl.innerHTML : "";
-  $("#pay-open").href = ds.upi;
+  try { $("#pay-open").href = atob(ds.code); } catch (e) { $("#pay-open").removeAttribute("href"); }
+  const save = $("#pay-save");
+  save.href = ds.qrpng;
+  save.download = "Oye Runner UPI " + ds.name + " Rs " + ds.amount + ".png";
   openModal(m);
 }
-const copyBtn = $("#pay-copy");
-if (copyBtn) copyBtn.addEventListener("click", async () => {
-  try { await navigator.clipboard.writeText(copyBtn.dataset.copy); copyBtn.textContent = "Copied"; setTimeout(() => (copyBtn.textContent = "Copy"), 2000); }
-  catch (e) { toast("Copy didn't work. UPI ID: " + copyBtn.dataset.copy); }
-});
 const payDone = $("#pay-done");
 if (payDone) payDone.addEventListener("click", () => {
   closeModal($("#pay-modal"));
@@ -324,7 +322,11 @@ $("#install-btn").addEventListener("click", async () => {
   if (deferredPrompt) { deferredPrompt.prompt(); const c = await deferredPrompt.userChoice; deferredPrompt = null; note.textContent = c.outcome === "accepted" ? "Installed. Find Oye Runner on your home screen." : "No problem, you can install it any time."; return; }
   note.textContent = isIOS ? "On iPhone: tap Share, then Add to Home Screen." : "Open your browser menu and choose Install app or Add to Home screen.";
 });
-if (standalone) { const f = $("#app"); if (f) f.style.display = "none"; }
+// No install button on iPhone/iPad, and nothing to install once it's already an app: hide the section and its menu link.
+if (standalone || isIOS) {
+  const f = $("#app"); if (f) f.style.display = "none";
+  $$('.links a[href="#app"]').forEach((a) => (a.style.display = "none"));
+}
 
 /* ───────── start ───────── */
 plansReady
