@@ -1,0 +1,18 @@
+---
+import { heading, rich } from "../lib/content.mjs";
+const { c } = Astro.props;
+const s = c.home.start;
+---
+<section class="b-red" id="start">
+  <div class="wrap start">
+    <div>
+      <p class="eyebrow">{s.eyebrow}</p>
+      <h2 set:html={heading(s.heading)} />
+      {s.sub && <p class="sub">{s.sub}</p>}
+      <div class="cta-row"><button class="btn btn-white" type="button" data-start>{c.home.start_button}</button></div>
+    </div>
+    <div class="steps">
+      {s.steps.map((t, i) => <div class="step"><b>{i + 1}</b><p set:html={rich(t)} /></div>)}
+    </div>
+  </div>
+</section>

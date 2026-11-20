@@ -1,0 +1,10 @@
+# built output (made by "npm run build")
+dist/
+.astro/
+# plan PDFs are generated from content/plans/ by "npm run pdfs"
+public/pdfs/
+node_modules/
+.DS_Store
+.env
+.env.*
+npm-debug.log*

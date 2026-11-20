@@ -1,0 +1,26 @@
+---
+import Mark from "./Mark.astro";
+import { heading, rich } from "../lib/content.mjs";
+const { c } = Astro.props;
+const k = c.home.coach;
+const photo = c.site.coach.photo;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const photoSrc = photo && !/^https?:/.test(photo) ? base + photo.replace(/^\//, "") : photo;
+---
+<section class="b-white" id="coach">
+  <div class="wrap coach">
+    <div class="portrait">
+      {photoSrc ? <img src={photoSrc} alt={"Coach " + c.site.coach.name} loading="lazy" /> : <Mark />}
+      {!photoSrc && <span class="cap">Coach {c.site.coach.name}</span>}
+    </div>
+    <div class="coach-copy">
+      <p class="eyebrow">{k.eyebrow}</p>
+      <h2 class="h2" set:html={heading(k.heading)} />
+      <span class="badge"><i>ACSM</i>{c.site.coach.credential}</span>
+      {k.paragraphs.map((p) => <p set:html={rich(p)} />)}
+      <div class="principles">
+        {k.principles.map((p) => <div><strong>{p.title}</strong>{p.text}</div>)}
+      </div>
+    </div>
+  </div>
+</section>

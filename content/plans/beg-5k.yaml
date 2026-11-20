@@ -1,0 +1,253 @@
+# Oye Runner training plan
+# File name = plan ID (used in links, PDFs and the Goal Finder). Don't rename it unless asked.
+# Weekly km, peak km and total km are worked out automatically from the "km" of each day.
+# Day types: rest | easy | key (speed/tempo/race-pace) | long | race | strength
+# Each week lists Monday to Sunday. Add "date:" to a day only for race plans with fixed dates.
+title: 8-Week Couch-to-5K
+subtitle: Walk-run from zero to 5 km. 3 walk-run days + strength.
+level: beginner
+distance: 5k
+who_its_for: "Generic plan for a complete beginner who has never trained for running: healthy, can walk briskly for 30-40 minutes."
+start_only_if: Healthy, able to walk briskly for 30 minutes.
+pdf_name: Oye Runner 8-Week Couch-to-5K
+weeks:
+  - label: Week 1
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 8 x (1 min jog / 2 min walk), 5 min walk
+        km: 2
+      - type: strength
+        title: Strength
+        details: "Strength (20 min): chair squats 3x10, glute bridges 3x12, wall calf raises 3x12, bird-dog 3x8/side, plank 3x20 s"
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 8 x (1 min jog / 2 min walk), 5 min walk
+        km: 2
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Brisk walk
+        details: 30-40 min brisk walk, chatty pace
+        km: 0
+      - type: long
+        title: Longest walk-run
+        details: 5 min brisk walk, then 9 x (1 min jog / 2 min walk), 5 min walk
+        km: 2.5
+  - label: Week 2
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 8 x (1.5 min jog / 2 min walk), 5 min walk
+        km: 2.5
+      - type: strength
+        title: Strength
+        details: "Strength (20 min): chair squats 3x10, glute bridges 3x12, wall calf raises 3x12, bird-dog 3x8/side, plank 3x20 s"
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 8 x (1.5 min jog / 2 min walk), 5 min walk
+        km: 2.5
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Brisk walk
+        details: 30-40 min brisk walk, chatty pace
+        km: 0
+      - type: long
+        title: Longest walk-run
+        details: 5 min brisk walk, then 9 x (1.5 min jog / 2 min walk), 5 min walk
+        km: 3
+  - label: Week 3
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 6 x (2 min jog / 1.5 min walk), 5 min walk
+        km: 3
+      - type: strength
+        title: Strength
+        details: "Strength (20 min): chair squats 3x10, glute bridges 3x12, wall calf raises 3x12, bird-dog 3x8/side, plank 3x20 s"
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 6 x (2 min jog / 1.5 min walk), 5 min walk
+        km: 3
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Brisk walk
+        details: 30-40 min brisk walk, chatty pace
+        km: 0
+      - type: long
+        title: Longest walk-run
+        details: 5 min brisk walk, then 7 x (2 min jog / 1.5 min walk), 5 min walk
+        km: 3.5
+  - label: Week 4
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 5 x (3 min jog / 1.5 min walk), 5 min walk
+        km: 3.5
+      - type: strength
+        title: Strength
+        details: "Strength (20 min): chair squats 3x10, glute bridges 3x12, wall calf raises 3x12, bird-dog 3x8/side, plank 3x20 s"
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 5 x (3 min jog / 1.5 min walk), 5 min walk
+        km: 3.5
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Brisk walk
+        details: 30-40 min brisk walk, chatty pace
+        km: 0
+      - type: long
+        title: Longest walk-run
+        details: 5 min brisk walk, then 6 x (3 min jog / 1.5 min walk), 5 min walk
+        km: 4
+  - label: Week 5
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 4 x (5 min jog / 1 min walk), 5 min walk
+        km: 4
+      - type: strength
+        title: Strength
+        details: "Strength (20 min): chair squats 3x10, glute bridges 3x12, wall calf raises 3x12, bird-dog 3x8/side, plank 3x20 s"
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 4 x (5 min jog / 1 min walk), 5 min walk
+        km: 4
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Brisk walk
+        details: 30-40 min brisk walk, chatty pace
+        km: 0
+      - type: long
+        title: Longest walk-run
+        details: 5 min brisk walk, then 5 x (5 min jog / 1 min walk), 5 min walk
+        km: 4.5
+  - label: Week 6
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 3 x (8 min jog / 1 min walk), 5 min walk
+        km: 4.5
+      - type: strength
+        title: Strength
+        details: "Strength (20 min): chair squats 3x10, glute bridges 3x12, wall calf raises 3x12, bird-dog 3x8/side, plank 3x20 s"
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 3 x (8 min jog / 1 min walk), 5 min walk
+        km: 4.5
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Brisk walk
+        details: 30-40 min brisk walk, chatty pace
+        km: 0
+      - type: long
+        title: Longest walk-run
+        details: 5 min brisk walk, then 4 x (8 min jog / 1 min walk), 5 min walk
+        km: 5
+  - label: Week 7
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 2 x (12 min jog / 1 min walk), 5 min walk
+        km: 5
+      - type: strength
+        title: Strength
+        details: "Strength (20 min): chair squats 3x10, glute bridges 3x12, wall calf raises 3x12, bird-dog 3x8/side, plank 3x20 s"
+        km: 0
+      - type: key
+        title: Walk-run
+        details: 5 min brisk walk, then 2 x (12 min jog / 1 min walk), 5 min walk
+        km: 5
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Brisk walk
+        details: 30-40 min brisk walk, chatty pace
+        km: 0
+      - type: long
+        title: Longest walk-run
+        details: 5 min brisk walk, then 3 x (12 min jog / 1 min walk), 5 min walk
+        km: 5.5
+  - label: Week 8 · race week
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Easy jog
+        details: 20 min easy jog (walk breaks fine)
+        km: 3
+      - type: strength
+        title: Mobility
+        details: 15 min gentle mobility, no strength this week
+        km: 0
+      - type: easy
+        title: Easy jog
+        details: 15 min easy jog
+        km: 2
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Shakeout
+        details: 10 min walk + 5 min easy jog. Lay out kit.
+        km: 1
+      - type: race
+        title: "RACE DAY: 5K"
+        details: Run it continuously, or 4 min jog / 1 min walk. Start slower than you think.
+        km: 5

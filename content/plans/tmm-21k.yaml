@@ -1,0 +1,309 @@
+# Oye Runner training plan
+# File name = plan ID (used in links, PDFs and the Goal Finder). Don't rename it unless asked.
+# Weekly km, peak km and total km are worked out automatically from the "km" of each day.
+# Day types: rest | easy | key (speed/tempo/race-pace) | long | race | strength
+# Each week lists Monday to Sunday. Add "date:" to a day only for race plans with fixed dates.
+title: Tata Mumbai Marathon 2027 · 21K 8-Week Countdown
+subtitle: 23 Nov 2026 - race day Sun 17 Jan 2027
+event: tmm-2027
+distance: 21k
+who_its_for: For runners already in training for TMM 2027.
+start_only_if: Long run of 12+ km and 30+ km a week now.
+pdf_name: Oye Runner Tata Mumbai Marathon 2027 - 21K 8-Week Countdown
+weeks:
+  - label: Week 1 · 23 Nov - 29 Nov 2026
+    days:
+      - date: Mon 23 Nov
+        type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - date: Tue 24 Nov
+        type: key
+        title: Speed
+        details: 5 x 1 km at 10K effort, 90 s jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 8
+      - date: Wed 25 Nov
+        type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - date: Thu 26 Nov
+        type: key
+        title: Race-pace run
+        details: 7 km incl. 3 km at half-marathon effort
+        km: 7
+      - date: Fri 27 Nov
+        type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - date: Sat 28 Nov
+        type: easy
+        title: Easy + strides + Strength B
+        details: "5 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 5
+      - date: Sun 29 Nov
+        type: long
+        title: Long run
+        details: 14 km easy (Zone 2, conversational)
+        km: 14
+  - label: Week 2 · 30 Nov - 6 Dec 2026
+    days:
+      - date: Mon 30 Nov
+        type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - date: Tue 1 Dec
+        type: key
+        title: Speed
+        details: 3 x 8 min threshold (RPE 7), 2 min jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 8
+      - date: Wed 2 Dec
+        type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - date: Thu 3 Dec
+        type: key
+        title: Race-pace run
+        details: 8 km incl. 4 km at HM effort
+        km: 8
+      - date: Fri 4 Dec
+        type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - date: Sat 5 Dec
+        type: easy
+        title: Easy + strides + Strength B
+        details: "5 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 5
+      - date: Sun 6 Dec
+        type: long
+        title: Long run
+        details: 16 km easy, last 3-5 km at half-marathon effort
+        km: 16
+  - label: Week 3 · 7 Dec - 13 Dec 2026
+    days:
+      - date: Mon 7 Dec
+        type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - date: Tue 8 Dec
+        type: key
+        title: Speed
+        details: 4 x 1.5 km at 10K effort, 2 min jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 8
+      - date: Wed 9 Dec
+        type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - date: Thu 10 Dec
+        type: key
+        title: Race-pace run
+        details: 9 km incl. 5 km at HM effort
+        km: 9
+      - date: Fri 11 Dec
+        type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - date: Sat 12 Dec
+        type: easy
+        title: Easy + strides + Strength B
+        details: "6 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 6
+      - date: Sun 13 Dec
+        type: long
+        title: Long run
+        details: 18 km easy, last 3-5 km at half-marathon effort
+        km: 18
+  - label: Week 4 · cutback · 14 Dec - 20 Dec 2026
+    days:
+      - date: Mon 14 Dec
+        type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - date: Tue 15 Dec
+        type: easy
+        title: Fartlek (cutback week)
+        details: 40 min easy with 8 x 1 min brisk / 1 min easy
+        km: 7
+      - date: Wed 16 Dec
+        type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - date: Thu 17 Dec
+        type: easy
+        title: Easy run
+        details: 5 km easy
+        km: 5
+      - date: Fri 18 Dec
+        type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - date: Sat 19 Dec
+        type: easy
+        title: Easy + strides + Strength B
+        details: "6 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 6
+      - date: Sun 20 Dec
+        type: long
+        title: Long run
+        details: 14 km easy (Zone 2, conversational)
+        km: 14
+  - label: Week 5 · 21 Dec - 27 Dec 2026
+    days:
+      - date: Mon 21 Dec
+        type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - date: Tue 22 Dec
+        type: key
+        title: Speed
+        details: 5 x 1.6 km at threshold, 90 s jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 8
+      - date: Wed 23 Dec
+        type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - date: Thu 24 Dec
+        type: key
+        title: Race-pace run
+        details: 10 km incl. 6 km at HM effort
+        km: 10
+      - date: Fri 25 Dec
+        type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - date: Sat 26 Dec
+        type: easy
+        title: Easy + strides + Strength B
+        details: "7 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 7
+      - date: Sun 27 Dec
+        type: long
+        title: Long run
+        details: 19 km easy, last 3-5 km at half-marathon effort
+        km: 19
+  - label: Week 6 · cutback · 28 Dec - 3 Jan 2027
+    days:
+      - date: Mon 28 Dec
+        type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - date: Tue 29 Dec
+        type: easy
+        title: Fartlek (cutback week)
+        details: 40 min easy with 8 x 1 min brisk / 1 min easy
+        km: 7
+      - date: Wed 30 Dec
+        type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - date: Thu 31 Dec
+        type: easy
+        title: Easy run
+        details: 5 km easy
+        km: 5
+      - date: Fri 1 Jan
+        type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - date: Sat 2 Jan
+        type: easy
+        title: Easy + strides + Strength B
+        details: "7 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 7
+      - date: Sun 3 Jan
+        type: long
+        title: Long run
+        details: 16 km easy (Zone 2, conversational)
+        km: 16
+  - label: Week 7 · taper · 4 Jan - 10 Jan 2027
+    days:
+      - date: Mon 4 Jan
+        type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - date: Tue 5 Jan
+        type: key
+        title: Speed (taper)
+        details: 2 x 10 min threshold, 3 min jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 7
+      - date: Wed 6 Jan
+        type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - date: Thu 7 Jan
+        type: key
+        title: Race-pace run (taper)
+        details: 8 km incl. 4 km at HM effort
+        km: 8
+      - date: Fri 8 Jan
+        type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - date: Sat 9 Jan
+        type: easy
+        title: Easy + strides + Strength B
+        details: "5 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 5
+      - date: Sun 10 Jan
+        type: long
+        title: Long run
+        details: 12 km easy (Zone 2, conversational)
+        km: 12
+  - label: Week 8 · race week · 11 Jan - 17 Jan 2027
+    days:
+      - date: Mon 11 Jan
+        type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - date: Tue 12 Jan
+        type: key
+        title: Race sharpener
+        details: 6 km incl. 3 x 1 km at HM effort. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 9
+      - date: Wed 13 Jan
+        type: easy
+        title: Easy run
+        details: 6 km easy
+        km: 6
+      - date: Thu 14 Jan
+        type: easy
+        title: Easy run
+        details: 30 min easy + 4 strides
+        km: 5
+      - date: Fri 15 Jan
+        type: rest
+        title: Rest
+        details: Rest. Hydrate well; carb-rich dinner.
+        km: 0
+      - date: Sat 16 Jan
+        type: easy
+        title: Shakeout
+        details: 15-20 min very easy + 4 strides. Lay out kit, pin your bib, plan breakfast.
+        km: 3
+      - date: Sun 17 Jan
+        type: race
+        title: "RACE DAY: Half marathon (21.1 km)"
+        details: Even effort. Sip water every station; take a gel or 2 dates at km 8 and km 15.
+        km: 21.1

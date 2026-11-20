@@ -1,0 +1,27 @@
+---
+import Mark from "./Mark.astro";
+import { rich } from "../lib/content.mjs";
+const { c } = Astro.props;
+const domain = new URL(c.site.url).hostname.replace(/^www\./, "");
+---
+<footer class="b-black">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="#top"><Mark style="width:17px;height:27px;color:var(--red)" /><span class="wordmark" style="color:#fff">Oye<i>Runner</i> <span class="dot">.</span></span></a>
+        <p style="margin-top:12px;text-transform:uppercase;font-weight:600;letter-spacing:.06em;font-size:13px">{c.home.footer.tagline}</p>
+      </div>
+      <div><h4>Explore</h4><a href="#plans">Plans</a><a href="#finder">Goal Finder</a><a href="#coach">Coach</a><a href="#club">Run Club</a></div>
+      <div>
+        <h4>Connect</h4>
+        <a href={c.site.contact.instagram_url} target="_blank" rel="noopener">Instagram @{c.site.contact.instagram_handle} ↗</a>
+        <a href={"mailto:" + c.site.contact.email}>{c.site.contact.email}</a>
+        <a href="#start">{c.home.start_button}</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p set:html={rich(c.home.footer.disclaimer)} />
+      <p>© <span id="yr">{new Date().getFullYear()}</span> {c.site.name} · {domain}</p>
+    </div>
+  </div>
+</footer>

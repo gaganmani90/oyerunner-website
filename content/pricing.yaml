@@ -1,0 +1,89 @@
+# ─────────────────────────────────────────────────────────────
+# Oye Runner · paid plans and coaching (the "Paid coaching" tab)
+# price: whole rupees, numbers only (2499, not "2,499" or "Rs. 2499").
+# featured: true  → the card is shown in red.
+# request: which option is pre-selected in the "Start with Oye Runner" form.
+#          Must be one of the "requests" in content/home.yaml → start_form.
+# ─────────────────────────────────────────────────────────────
+
+one_time:
+  heading: Customised plan · one-time
+  button: Request this plan
+  items:
+    - name: 5K or 10K plan
+      duration: 4-8 weeks
+      price: 999
+      features:
+        - Built on your current pace
+        - Strength and mobility
+        - One plan revision
+      request: Customised paid plan
+
+    - name: Half marathon plan
+      duration: 12-16 weeks
+      price: 1999
+      featured: true
+      features:
+        - Pace and heart-rate zones
+        - Long-run fuelling
+        - Taper and race-day plan
+      request: Customised paid plan
+
+    - name: Marathon plan
+      duration: 16-20 weeks
+      price: 2999
+      features:
+        - Marathon-pace long runs
+        - Carb-loading and gel plan
+        - Two plan revisions
+      request: Customised paid plan
+
+    - name: Weight-loss running plan
+      duration: 12 weeks
+      price: 1999
+      features:
+        - Walk-run to steady running
+        - Indian veg and non-veg meal guide
+        - Fortnightly check-in
+      request: Customised paid plan
+
+subscriptions:
+  heading: Coaching subscription
+  button: Start coaching
+  items:
+    - name: Monthly coaching
+      price: 2499
+      per: month
+      features:
+        - Customised plan updated every week
+        - Weekly check-in on WhatsApp
+        - Strength, nutrition and hydration
+        - Cancel any month
+      request: Monthly coaching
+
+    - name: Annual coaching
+      price: 24999
+      per: year
+      tag: Best value · save 17%
+      featured: true
+      features:
+        - Everything in monthly
+        - Works out to Rs. 2,083 a month
+        - Race-day plan for every race
+        - Priority replies
+      request: Annual coaching
+
+    - name: Elite 1-on-1
+      price: 4999
+      per: month
+      features:
+        - Everything in monthly
+        - Two video calls a month
+        - Strava or Garmin data review
+        - Unlimited plan changes
+      request: Monthly coaching
+
+# Small print under the price cards.
+note: Introductory prices in Rs., inclusive of all charges. Every paid plan starts with a free 15-minute call. Coach Mayank then sends a UPI or Razorpay payment link by email or WhatsApp.
+# Shown instead of "note" once a UPI ID is set in content/site.yaml.
+note_with_upi: Introductory prices in Rs., inclusive of all charges. Pay now by UPI and share your details, or request the plan first and Coach Mayank will set up a free 15-minute call.
