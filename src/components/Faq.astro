@@ -1,0 +1,12 @@
+---
+import { heading } from "../lib/content.mjs";
+const { c } = Astro.props;
+---
+<section class="b-cream" id="faq">
+  <div class="wrap">
+    <div class="head"><h2 class="h2" set:html={heading(c.home.faq.heading)} /></div>
+    <div class="faq">
+      {c.faq.map((f) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
+    </div>
+  </div>
+</section>

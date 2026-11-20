@@ -1,0 +1,25 @@
+---
+import { heading } from "../lib/content.mjs";
+const { c } = Astro.props;
+const w = c.home.why;
+---
+<section class="b-cream" id="why">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">{w.eyebrow}</p>
+      <h2 class="h2" set:html={heading(w.heading)} />
+      {w.sub && <p class="sub">{w.sub}</p>}
+    </div>
+    <div class="ben">
+      {c.benefits.map((b, i) => (
+        <article class="bcard">
+          <span class="n">{String(i + 1).padStart(2, "0")}</span>
+          <h3>{b.title}</h3>
+          <p>{b.text}</p>
+          {b.reel && <a class="reel" href={b.reel} target="_blank" rel="noopener"><span class="play"></span>Watch the reel</a>}
+          <span class="fact">{b.fact}</span>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

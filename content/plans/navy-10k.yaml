@@ -1,0 +1,77 @@
+# Oye Runner training plan
+# File name = plan ID (used in links, PDFs and the Goal Finder). Don't rename it unless asked.
+# Weekly km, peak km and total km are worked out automatically from the "km" of each day.
+# Day types: rest | easy | key (speed/tempo/race-pace) | long | race | strength
+# Each week lists Monday to Sunday. Add "date:" to a day only for race plans with fixed dates.
+title: Navy Half Marathon 2026 · 10K Race-Week Plan
+subtitle: Race week 18-22 Nov + recovery week
+event: navy-2026
+distance: 10k
+who_its_for: For runners entered in the IndianOil WNC Navy Half Marathon, Sunday 22 Nov 2026, South Mumbai.
+start_only_if: "You're registered for the 10K and have trained for it. No new training this week: rest, sharpen, race."
+pdf_name: Oye Runner Navy Half Marathon 2026 - 10K Race-Week Plan
+weeks:
+  - label: Race week · 18-22 Nov 2026
+    days:
+      - date: Wed 18 Nov
+        type: easy
+        title: Easy + strides
+        details: 35 min easy + 4 x 20 s strides
+        km: 6
+      - date: Thu 19 Nov
+        type: key
+        title: Race sharpener
+        details: 15 min easy, 3 x 1 km at 10K effort with 2 min jog, 10 min easy
+        km: 8
+      - date: Fri 20 Nov
+        type: rest
+        title: Rest
+        details: Rest. Drink 2.5-3 L water through the day; normal meals, nothing new.
+        km: 0
+      - date: Sat 21 Nov
+        type: easy
+        title: Shakeout + prep
+        details: 10-15 min very easy + 4 strides. Pin bib, charge watch, lay out kit, sleep by 9:30 pm.
+        km: 2
+      - date: Sun 22 Nov
+        type: race
+        title: "RACE DAY: Navy 10K"
+        details: Wake 2.5-3 h before your start. Light breakfast 2 h before (banana + toast or small poha), 400-500 ml water with electrolytes. Reach 45 min early, 10 min easy warm-up. First 3 km a little easier than goal, settle, push from km 7.
+        km: 10
+  - label: Recovery week · 23-29 Nov 2026
+    days:
+      - date: Mon 23 Nov
+        type: rest
+        title: Rest
+        details: Rest. Walk 20 min, eat a protein-rich meal.
+        km: 0
+      - date: Tue 24 Nov
+        type: easy
+        title: Recovery jog
+        details: 20-25 min very easy
+        km: 4
+      - date: Wed 25 Nov
+        type: strength
+        title: Strength A (light)
+        details: "Strength A (30 min): squats 2x10, reverse lunges 2x8/leg, single-leg RDL 2x8/leg, calf raises 2x15, plank 2x40 s"
+        km: 0
+      - date: Thu 26 Nov
+        type: easy
+        title: Easy run
+        details: 30 min easy
+        km: 5
+      - date: Fri 27 Nov
+        type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - date: Sat 28 Nov
+        type: easy
+        title: Easy + strides
+        details: 30 min easy + 4 strides
+        km: 5
+      - date: Sun 29 Nov
+        type: long
+        title: Easy long run
+        details: 10 km easy. Then pick your next goal (TMM 2027?)
+        km: 10

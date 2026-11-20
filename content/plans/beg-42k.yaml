@@ -1,0 +1,493 @@
+# Oye Runner training plan
+# File name = plan ID (used in links, PDFs and the Goal Finder). Don't rename it unless asked.
+# Weekly km, peak km and total km are worked out automatically from the "km" of each day.
+# Day types: rest | easy | key (speed/tempo/race-pace) | long | race | strength
+# Each week lists Monday to Sunday. Add "date:" to a day only for race plans with fixed dates.
+title: 16-Week Beginner Marathon (run-walk)
+subtitle: Only after you've finished a half marathon or run-walked 15 km. 3 walk-run days + strength.
+level: beginner
+distance: 42k
+who_its_for: "Generic plan for a complete beginner who has never trained for running: healthy, can walk briskly for 30-40 minutes."
+start_only_if: Must have finished a half marathon, or the Oye Runner 16-Week Beginner Half Marathon. Not for absolute beginners.
+pdf_name: Oye Runner 16-Week Beginner Marathon run-walk
+weeks:
+  - label: Week 1
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 6 km easy (walk breaks fine)
+        km: 6
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 8 km incl. 3 km at marathon effort
+        km: 8
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 15 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 15
+  - label: Week 2
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 6 km easy (walk breaks fine)
+        km: 6
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 8 km incl. 3 km at marathon effort
+        km: 8
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 17 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 17
+  - label: Week 3
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 6 km easy (walk breaks fine)
+        km: 6
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 8 km incl. 3 km at marathon effort
+        km: 8
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 19 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 19
+  - label: Week 4 · cutback
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 6 km easy (walk breaks fine)
+        km: 6
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 6 km easy
+        km: 8
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 15 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 15
+  - label: Week 5
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 6 km easy (walk breaks fine)
+        km: 6
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 8 km incl. 3 km at marathon effort
+        km: 8
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 21 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 21
+  - label: Week 6
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 6 km easy (walk breaks fine)
+        km: 6
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 8 km incl. 3 km at marathon effort
+        km: 8
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 23 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 23
+  - label: Week 7
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 8 km easy (walk breaks fine)
+        km: 8
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 10 km incl. 3 km at marathon effort
+        km: 10
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 25 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 25
+  - label: Week 8 · cutback
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 8 km easy (walk breaks fine)
+        km: 8
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 8 km easy
+        km: 10
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 19 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 19
+  - label: Week 9
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 8 km easy (walk breaks fine)
+        km: 8
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 10 km incl. 5 km at marathon effort
+        km: 10
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 27 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 27
+  - label: Week 10
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 8 km easy (walk breaks fine)
+        km: 8
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 10 km incl. 5 km at marathon effort
+        km: 10
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 29 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 29
+  - label: Week 11 · cutback
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 8 km easy (walk breaks fine)
+        km: 8
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 8 km easy
+        km: 10
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 23 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 23
+  - label: Week 12
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 8 km easy (walk breaks fine)
+        km: 8
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 10 km incl. 5 km at marathon effort
+        km: 10
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 30 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 30
+  - label: Week 13
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 8 km easy (walk breaks fine)
+        km: 8
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 10 km incl. 5 km at marathon effort
+        km: 10
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 32 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 32
+  - label: Week 14 · taper
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 8 km easy (walk breaks fine)
+        km: 8
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 10 km incl. 5 km at marathon effort
+        km: 10
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 24 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 24
+  - label: Week 15 · taper
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 8 km easy (walk breaks fine)
+        km: 8
+      - type: strength
+        title: Strength
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s"
+        km: 0
+      - type: key
+        title: Steady run
+        details: 10 km incl. 5 km at marathon effort
+        km: 10
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy + 4 strides
+        km: 5
+      - type: long
+        title: Long walk-run
+        details: 16 km run-walk (5 min / 1 min). Fuel every 30-40 min, electrolytes in heat
+        km: 16
+  - label: Week 16 · race week
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 6 km easy incl. 2 km at marathon effort
+        km: 6
+      - type: strength
+        title: Mobility
+        details: 15 min gentle mobility
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 30 min easy + 4 strides
+        km: 5
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Shakeout
+        details: "15 min easy. Carb-load: rice, roti, idli, potatoes."
+        km: 2
+      - type: race
+        title: "RACE DAY: Marathon"
+        details: Run-walk 5 min / 1 min from km 1, even if you feel great. Gel every 30-40 min; water every station.
+        km: 42.2

@@ -1,0 +1,65 @@
+---
+// The "Start with Oye Runner" form and the UPI payment sheet (both pop-ups).
+import Mark from "./Mark.astro";
+import { heading } from "../lib/content.mjs";
+const { c } = Astro.props;
+const f = c.home.start_form;
+---
+<button class="fab" type="button" data-start aria-label={c.home.start_button}>
+  <span class="ico"><Mark /></span>{c.home.start_button}
+</button>
+
+<div class="modal" id="start-modal" role="dialog" aria-modal="true" aria-labelledby="sm-title">
+  <div class="sheet">
+    <div class="sheet-h">
+      <div><h3 id="sm-title" set:html={heading(c.home.start_button + ".")} /><p id="sm-sub"></p></div>
+      <button class="close" type="button" data-close aria-label="Close">×</button>
+    </div>
+    <form class="sform" id="start-form" novalidate>
+      <p class="chosen" id="sm-chosen">Plan: <span id="sm-plan"></span></p>
+      <div class="fields">
+        <div class="field"><label for="s-name">Full name</label><input id="s-name" autocomplete="name" required /></div>
+        <div class="field"><label for="s-mobile">Mobile number</label><input id="s-mobile" type="tel" inputmode="tel" autocomplete="tel" placeholder="+91 98765 43210" required /></div>
+        <div class="field full"><label for="s-email">Email</label><input id="s-email" type="email" autocomplete="email" required /></div>
+        <div class="field"><label for="s-age">Age</label><input id="s-age" type="number" inputmode="numeric" min="10" max="90" required /></div>
+        <div class="field"><label for="s-gender">Gender</label>
+          <select id="s-gender" required><option value="">Select</option><option>Male</option><option>Female</option><option>Other</option><option>Prefer not to say</option></select></div>
+        <div class="field full"><label for="s-type">What kind of runner are you?</label>
+          <select id="s-type" required><option value="">Select</option>{f.runner_types.map((t) => <option>{t}</option>)}</select></div>
+        <div class="field full"><label for="s-req">What would you like?</label>
+          <select id="s-req" required><option value="">Select</option>{f.requests.map((t) => <option>{t}</option>)}</select></div>
+        <div class="field full" id="s-utr-wrap" hidden><label for="s-utr">UPI transaction ID / UTR (from your payment app)</label><input id="s-utr" inputmode="numeric" autocomplete="off" placeholder="e.g. 412345678901" /></div>
+        <div class="field full"><label for="s-msg">Your goal or question (optional)</label><textarea id="s-msg" placeholder={f.message_placeholder}></textarea></div>
+      </div>
+      <label class="check" for="s-consent"><input type="checkbox" id="s-consent" checked /><span>{f.consent}</span></label>
+      <button class="btn" type="submit" id="s-submit">Send my details</button>
+      <div class="msg" id="s-msg-box" role="status"></div>
+    </form>
+  </div>
+</div>
+
+{c.upiEnabled && (
+  <div class="modal" id="pay-modal" role="dialog" aria-modal="true" aria-labelledby="pay-title">
+    <div class="sheet">
+      <div class="sheet-h">
+        <div><h3 id="pay-title">Pay by UPI<span class="dot">.</span></h3><p id="pay-name"></p></div>
+        <button class="close" type="button" data-close aria-label="Close">×</button>
+      </div>
+      <div class="pay-amt" id="pay-amt"></div>
+      <div class="pay-grid">
+        <div class="qr" id="pay-qr" aria-label="UPI QR code"></div>
+        <div class="pay-steps">
+          <p><strong>On a computer:</strong> scan the code with GPay, PhonePe, Paytm or any UPI app.</p>
+          <p class="only-touch"><strong>On this phone:</strong> tap Open UPI app below.</p>
+          <p>Or pay to this UPI ID:</p>
+          <div class="upi-id"><span>{c.site.payments.upi_id}</span><button class="btn btn-sm btn-black" type="button" id="pay-copy" data-copy={c.site.payments.upi_id}>Copy</button></div>
+        </div>
+      </div>
+      <div class="pay-actions">
+        <a class="btn only-touch" id="pay-open" href="#">Open UPI app</a>
+        <button class="btn btn-ghost" type="button" id="pay-done">I've paid · send my details</button>
+        <p class="fine">After paying, send your details with the UPI transaction ID so {c.site.coach.short_name} can start your plan.</p>
+      </div>
+    </div>
+  </div>
+)}

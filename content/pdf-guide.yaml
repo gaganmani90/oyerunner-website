@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────────────────────
+# Oye Runner · extra pages printed at the end of every free plan PDF
+# The weekly schedule comes from the plan file itself; this is the "how to use it" part.
+# The safety note at the end comes from footer.disclaimer in content/home.yaml.
+# Wrap words in **double stars** to make them bold.
+# ─────────────────────────────────────────────────────────────
+
+sections:
+  - heading: How hard to run
+    points:
+      - "**Easy (Zone 2):** conversational. You can talk in full sentences. Most of your running happens here."
+      - "**Tempo or threshold (RPE 7, Zone 4):** comfortably hard. A few words at a time, not full sentences."
+      - "**5K or 10K effort (RPE 7-8):** hard but controlled. Run the last rep at the same pace as the first."
+      - "**Strides:** 20 seconds quick and relaxed, not a sprint. Walk or jog back fully."
+      - "**No watch?** Use the talk test. Your breathing is the best guide."
+
+  - heading: Strength routines (30 min each)
+    points:
+      - "**Strength A:** squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s."
+      - "**Strength B:** glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10."
+
+  - heading: Fuel, water and heat
+    points:
+      - Run early, ideally before 7:30 am in summer, and slow down on humid days.
+      - Add electrolytes to your water for any run over an hour.
+      - On long runs over 90 minutes, take a gel, 2 dates or a banana every 30-40 minutes.
+      - Race week, eat a carb-rich dinner the night before and try nothing new on race day.
+      - Sleep 7-9 hours on training weeks. Rest days are part of the plan.
+
+closing: Want this plan built around your pace, schedule and race date? Start with Oye Runner at oyerunner.com.

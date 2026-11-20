@@ -1,0 +1,253 @@
+# Oye Runner training plan
+# File name = plan ID (used in links, PDFs and the Goal Finder). Don't rename it unless asked.
+# Weekly km, peak km and total km are worked out automatically from the "km" of each day.
+# Day types: rest | easy | key (speed/tempo/race-pace) | long | race | strength
+# Each week lists Monday to Sunday. Add "date:" to a day only for race plans with fixed dates.
+title: 5K Intermediate · 8-Week Plan
+subtitle: 8 weeks · 4-5 run days + 2 strength
+level: intermediate
+distance: 5k
+who_its_for: "Generic plan for a 32-year-old male intermediate runner: already running 3-4 days a week and able to run 10 km comfortably. 5K/10K plans use 4 run days, 21K uses 4, 42K uses 5, plus 2 strength sessions."
+start_only_if: Comfortable running 20-25 km a week.
+pdf_name: Oye Runner 5K Intermediate - 8-Week Plan
+weeks:
+  - label: Week 1
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Speed
+        details: 6 x 400 m at 5K effort (RPE 8), 90 s jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 7
+      - type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - type: key
+        title: Tempo
+        details: 15 min tempo (RPE 7, Zone 4). Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 6
+      - type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - type: easy
+        title: Easy + strides + Strength B
+        details: "5 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 5
+      - type: long
+        title: Long run
+        details: 7 km easy (Zone 2, conversational)
+        km: 7
+  - label: Week 2
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Speed
+        details: 5 x 600 m at 5K effort, 2 min jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 7
+      - type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - type: key
+        title: Tempo
+        details: 2 x 10 min tempo, 2 min jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 6
+      - type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - type: easy
+        title: Easy + strides + Strength B
+        details: "5 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 5
+      - type: long
+        title: Long run
+        details: 8 km easy (Zone 2, conversational)
+        km: 8
+  - label: Week 3
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Speed
+        details: 5 x 800 m at 5K effort, 2 min jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 7
+      - type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - type: key
+        title: Tempo
+        details: 2 x 10 min tempo, 2 min jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 6
+      - type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - type: easy
+        title: Easy + strides + Strength B
+        details: "6 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 6
+      - type: long
+        title: Long run
+        details: 9 km easy (Zone 2, conversational)
+        km: 9
+  - label: Week 4 · cutback
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Fartlek (cutback week)
+        details: 40 min easy with 8 x 1 min brisk / 1 min easy
+        km: 7
+      - type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy
+        km: 5
+      - type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - type: easy
+        title: Easy + strides + Strength B
+        details: "6 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 6
+      - type: long
+        title: Long run
+        details: 7 km easy (Zone 2, conversational)
+        km: 7
+  - label: Week 5
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Speed
+        details: 4 x 1 km at 5K effort, 2:30 jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 7
+      - type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - type: key
+        title: Tempo
+        details: 3 x 8 min tempo, 2 min jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 6
+      - type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - type: easy
+        title: Easy + strides + Strength B
+        details: "6 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 6
+      - type: long
+        title: Long run
+        details: 9 km easy (Zone 2, conversational)
+        km: 9
+  - label: Week 6
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Speed
+        details: 6 x 600 m slightly quicker than 5K effort, 2 min jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 7
+      - type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - type: key
+        title: Tempo
+        details: 3 x 8 min tempo, 2 min jog. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 6
+      - type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - type: easy
+        title: Easy + strides + Strength B
+        details: "7 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 7
+      - type: long
+        title: Long run
+        details: 10 km easy (Zone 2, conversational)
+        km: 10
+  - label: Week 7 · cutback
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: easy
+        title: Fartlek (cutback week)
+        details: 40 min easy with 8 x 1 min brisk / 1 min easy
+        km: 7
+      - type: strength
+        title: Strength A + mobility
+        details: "Strength A (30 min): squats 3x10, reverse lunges 3x8/leg, single-leg RDL 3x8/leg, calf raises 3x15, plank 3x40 s. Add 10 min hip and ankle mobility."
+        km: 0
+      - type: easy
+        title: Easy run
+        details: 5 km easy
+        km: 5
+      - type: rest
+        title: Rest
+        details: Rest or 20 min mobility / yoga.
+        km: 0
+      - type: easy
+        title: Easy + strides + Strength B
+        details: "7 km easy + 6 x 20 s strides, then Strength B (30 min): glute bridges 3x12, step-ups 3x10/leg, side plank 3x30 s/side, single-leg calf raises 3x12, dead bugs 3x10"
+        km: 7
+      - type: long
+        title: Long run
+        details: 8 km easy (Zone 2, conversational)
+        km: 8
+  - label: Week 8 · race week
+    days:
+      - type: rest
+        title: Rest
+        details: Full rest. Walk, stretch, sleep 7-9 hours.
+        km: 0
+      - type: key
+        title: Race sharpener
+        details: 3 x 800 m at 5K effort, 2 min jog + 4 strides. Warm-up 15 min easy + drills; cool-down 10 min easy.
+        km: 9
+      - type: easy
+        title: Easy run
+        details: 30 min easy
+        km: 6
+      - type: easy
+        title: Easy + strides
+        details: 20 min easy + 4 x 20 s strides
+        km: 4
+      - type: rest
+        title: Rest
+        details: Rest. Hydrate well; carb-rich dinner.
+        km: 0
+      - type: easy
+        title: Shakeout
+        details: 15-20 min very easy + 4 strides. Lay out kit, pin your bib, plan breakfast.
+        km: 3
+      - type: race
+        title: "RACE DAY: 5K"
+        details: Start at a controlled effort for the first km, build through km 2-4, empty the tank in the last km.
+        km: 5

@@ -1,0 +1,16 @@
+---
+import Mark from "./Mark.astro";
+const { c } = Astro.props;
+---
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top" aria-label={c.site.name + " home"}>
+      <Mark />
+      <span class="wordmark">Oye<i>Runner</i> <span class="dot">.</span></span>
+    </a>
+    <nav class="links" aria-label="Main">
+      {c.home.nav.map((n) => <a href={n.href}>{n.label}</a>)}
+    </nav>
+    <button class="btn btn-sm" type="button" data-start>{c.home.start_button}</button>
+  </div>
+</header>

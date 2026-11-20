@@ -1,0 +1,39 @@
+# ─────────────────────────────────────────────────────────────
+# Oye Runner · site settings
+# Contact details, links and payment settings used across the whole site.
+# Change a value here and it updates everywhere it appears.
+# ─────────────────────────────────────────────────────────────
+
+name: Oye Runner
+tagline: Transforming busy lives
+url: https://www.oyerunner.com          # the live web address (used for sharing previews)
+
+seo:
+  title: Oye Runner · Transforming Busy Lives
+  description: "Oye Runner: free 5K, 10K, half and full marathon plans and customised coaching by Coach Mayank Mani Kaushik, ACSM-Certified Marathon Coach. Transforming busy lives."
+  share_description: Free running plans from 5K to 42K, Navy Half Marathon and TMM 2027 plans, and customised coaching.
+
+coach:
+  name: Mayank Mani Kaushik
+  short_name: Coach Mayank
+  credential: ACSM-Certified Marathon Coach
+  photo: ""                             # e.g. /images/coach.jpg (put the photo in public/images/). Empty = logo shown instead.
+
+contact:
+  email: oyerunner@gmail.com
+  instagram_url: https://www.instagram.com/oye.runner/
+  instagram_handle: oye.runner
+
+run_club_city: Thane · Mumbai
+
+# Where the "Start with Oye Runner" form sends requests.
+# FormSubmit emails each request to the address at the end of the link.
+# The very first request triggers a one-time "activate" email to that inbox: click it once.
+lead_form_endpoint: https://formsubmit.co/ajax/oyerunner@gmail.com
+
+# ── Payments ─────────────────────────────────────────────────
+# Paste the UPI ID (looks like name@okhdfcbank) to switch on "Pay with UPI"
+# buttons on every paid plan. Leave it empty ("") to hide them.
+payments:
+  upi_id: ""
+  payee_name: Oye Runner                # the name shown in the UPI app

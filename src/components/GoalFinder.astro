@@ -1,0 +1,61 @@
+---
+import { heading } from "../lib/content.mjs";
+const { c } = Astro.props;
+const f = c.home.finder;
+const ev = c.featuredEvent;
+---
+<section class="b-cream" id="finder">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">{f.eyebrow}</p>
+      <h2 class="h2" set:html={heading(f.heading)} />
+      {f.sub && <p class="sub">{f.sub}</p>}
+    </div>
+    <div class="finder">
+      <form class="fform" id="finder-form" novalidate>
+        <fieldset>
+          <legend><em>1</em>What's your goal?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="goal" value="start" /><span>My first 5K</span></label>
+            <label class="chip"><input type="radio" name="goal" value="weight" /><span>Lose weight running</span></label>
+            <label class="chip"><input type="radio" name="goal" value="10k" /><span>Run a 10K</span></label>
+            <label class="chip"><input type="radio" name="goal" value="half" checked /><span>Half marathon</span></label>
+            <label class="chip"><input type="radio" name="goal" value="full" /><span>Full marathon</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><em>2</em>Where are you right now?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="level" value="0" /><span>Never run</span></label>
+            <label class="chip"><input type="radio" name="level" value="1" /><span>Can run 2-3 km</span></label>
+            <label class="chip"><input type="radio" name="level" value="2" /><span>Run 5K comfortably</span></label>
+            <label class="chip"><input type="radio" name="level" value="3" checked /><span>Run 10K+ regularly</span></label>
+            <label class="chip"><input type="radio" name="level" value="4" /><span>Finished a half or full</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><em>3</em>About you</legend>
+          <div class="fields">
+            <div class="field"><label for="f-age">Age</label><input id="f-age" type="number" inputmode="numeric" min="15" max="80" value="32" /><p class="hint" id="h-age">Sets your heart-rate zones</p></div>
+            <div class="field"><label for="f-5k">Recent 5K time (optional)</label><input id="f-5k" type="text" inputmode="numeric" placeholder="mm:ss" value="28:30" autocomplete="off" /><p class="hint" id="h-5k">Unlocks your training paces</p></div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><em>4</em>Race day (optional)</legend>
+          <div class="field"><label for="f-race">Target race date</label><input id="f-race" type="date" />
+            {ev && (
+              <button type="button" class="linkbtn" data-race-date={ev.date}>
+                Use {ev.short_name || ev.name} · {new Date(ev.date + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}
+              </button>
+            )}
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><em>5</em>Health check</legend>
+          <label class="check" for="f-health"><input type="checkbox" id="f-health" /><span>I have a heart, lung or metabolic condition, get chest pain or dizziness when active, have a current injury, or I'm pregnant.</span></label>
+        </fieldset>
+      </form>
+      <aside class="result" id="result" aria-live="polite"><p class="fine">Loading plans…</p></aside>
+    </div>
+  </div>
+</section>

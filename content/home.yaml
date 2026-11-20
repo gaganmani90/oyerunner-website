@@ -1,0 +1,114 @@
+# ─────────────────────────────────────────────────────────────
+# Oye Runner · home page text, top to bottom
+# Wrap words in **double stars** to make them bold.
+# Headings ending in "." or "?" get the red brand dot automatically.
+# Prices, plans, events, FAQ and benefits have their own files in content/.
+# ─────────────────────────────────────────────────────────────
+
+nav:
+  - { label: Why run, href: "#why" }
+  - { label: Plans, href: "#plans" }
+  - { label: Goal Finder, href: "#finder" }
+  - { label: Coach, href: "#coach" }
+  - { label: Run Club, href: "#club" }
+  - { label: App, href: "#app" }
+
+start_button: Start with Oye Runner
+
+hero:
+  eyebrow: Coach Mayank Mani Kaushik · ACSM-Certified Marathon Coach
+  title_lines: [Transforming, busy lives.]
+  lede: Free running plans from 5K to the marathon, and customised coaching that fits your job, Indian heat and home-cooked food.
+  primary_button: Get a free plan
+  proof:
+    - { title: ACSM certified, text: Marathon coach }
+    - { title: 20 free plans, text: "5K, 10K, 21K and 42K" }
+    - { title: Made for India, text: "Heat, humidity, Indian meals" }
+    - { title: Strength built in, text: "Two sessions a week, every plan" }
+
+why:
+  eyebrow: Why run
+  heading: Six reasons to start.
+  sub: Running is the simplest habit that changes everything else. Tap a card to watch the Oye Runner reel on it.
+
+plans:
+  eyebrow: Plans
+  heading: Every plan, one place.
+  sub: Download a free PDF plan, get race-ready for the Navy Half Marathon or TMM 2027, or get a plan built just for you.
+  free_tab: Free plans
+  paid_tab: Paid coaching
+  plan_inside: Day-by-day sessions, effort and heart-rate zones, two strength routines, Indian fuel and hydration tips, safety note.
+
+finder:
+  eyebrow: Goal Finder
+  heading: Not sure which plan?
+  sub: Answer five questions and get the right free plan, a sample week and your training zones.
+
+coach:
+  eyebrow: Meet your coach
+  heading: Hi, I'm Coach Mayank.
+  paragraphs:
+    - "I started **Oye Runner** as a running group and an Instagram page for people with busy lives: professionals, students and parents who want to move more and feel better, without wrecking their knees or their schedules."
+    - My plans are built on exercise science and real Indian life. Easy runs that are actually easy. Strength work that keeps you away from the physio. Food advice that works with the dabba you already eat. And early-morning sessions that respect the Mumbai heat.
+  principles:
+    - { title: Science first, text: "Plans follow ACSM guidance for safe, progressive training." }
+    - { title: Small steps, text: "Volume rises gradually, with a lighter week built in." }
+    - { title: Whole runner, text: "Running, strength, mobility, food, water and sleep." }
+    - { title: Real life, text: "Early mornings, monsoon backups and travel weeks." }
+
+club:
+  eyebrow: Run Club
+  heading: Better together.
+  sub: Group runs, race-day meetups and a community that keeps you showing up.
+  card_heading: Run with Oye Runner.
+  card_text: All paces welcome. Nobody gets left behind, and the chai after is mandatory.
+  schedule:                              # "Where" comes from run_club_city in content/site.yaml
+    - { label: Weekend long run, value: "Early morning, easy pace" }
+    - { label: Midweek, value: Strength and drills }
+    - { label: Details, value: Posted weekly on Instagram }
+  join_button: Join the group
+
+start:
+  eyebrow: Free guide · free plan · coaching
+  heading: Start with Oye Runner.
+  sub: Tell us a little about yourself and Coach Mayank will email you the right plan. Free plans download instantly.
+  steps:
+    - Share your name, contact details, age and the kind of runner you are.
+    - "Choose what you want: free 7-day guide, a free plan, a customised plan or coaching."
+    - Your details reach **oyerunner@gmail.com**. Coach Mayank replies with your plan.
+
+app:
+  eyebrow: Oye Runner app
+  heading: Oye Runner on your home screen.
+  sub: Install it in two taps. It opens full screen like any app, and it's always up to date because it loads the latest plans every time.
+  iphone_steps:
+    - Open **oyerunner.com** in Safari, Chrome or any browser.
+    - Tap the **Share** button, then **Add to Home Screen**, then **Add**.
+  android_text: Tap **Install**. If it doesn't appear, open your browser's menu and choose **Install app** or **Add to Home screen**. Works in Chrome, Edge, Samsung Internet and Firefox.
+  install_button: Install Oye Runner
+
+faq:
+  heading: Questions, answered.
+
+footer:
+  tagline: Transforming busy lives .
+  disclaimer: "**Before you start.** Oye Runner plans are general training guidance, not medical advice. If you have a heart, lung, kidney or metabolic condition, feel chest pain or dizziness during activity, are pregnant or are recovering from an injury, get medical clearance first. Stop and seek help for chest pain, severe breathlessness or faintness."
+
+# The "Start with Oye Runner" form (pop-up)
+start_form:
+  runner_types:
+    - Just starting my weight-loss journey
+    - Beginner
+    - Intermediate
+    - Advanced
+    - Elite
+  requests:
+    - Free plan
+    - Free 7-day beginner guide
+    - Customised paid plan
+    - Monthly coaching
+    - Annual coaching
+    - Join the run club
+    - General enquiry
+  message_placeholder: e.g. First half marathon at TMM 2027, can run 8 km now
+  consent: Oye Runner can email or WhatsApp me about my request and the occasional training tip.

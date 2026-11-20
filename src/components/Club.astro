@@ -1,0 +1,35 @@
+---
+import { heading } from "../lib/content.mjs";
+const { c } = Astro.props;
+const k = c.home.club;
+const ev = c.featuredEvent;
+---
+<section class="b-cream" id="club">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">{k.eyebrow}</p>
+      <h2 class="h2" set:html={heading(k.heading)} />
+      {k.sub && <p class="sub">{k.sub}</p>}
+    </div>
+    <div class="club">
+      <div class="ccard white">
+        <h3 set:html={heading(k.card_heading)} />
+        <p>{k.card_text}</p>
+        <div class="sched">
+          <div><strong>Where</strong><span>{c.site.run_club_city}</span></div>
+          {k.schedule.map((s) => <div><strong>{s.label}</strong><span>{s.value}</span></div>)}
+        </div>
+        <div class="bottom"><button class="btn btn-black" type="button" data-start data-req="Join the run club">{k.join_button}</button></div>
+      </div>
+      {ev && (
+        <div class="ccard black">
+          <p class="eyebrow">Next big one</p>
+          <div class="count" data-countdown={ev.date} data-after={ev.after_race}>…<small>days to go</small></div>
+          <h3>{ev.name}</h3>
+          {ev.featured_text && <p>{ev.featured_text}</p>}
+          <div class="bottom"><button class="btn" type="button" data-tab={ev.id}>See {ev.tab_label} plans</button></div>
+        </div>
+      )}
+    </div>
+  </div>
+</section>

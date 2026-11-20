@@ -1,0 +1,57 @@
+# ─────────────────────────────────────────────────────────────
+# Oye Runner · race events
+# Each event gets its own tab in the Plans section, between "Free plans" and "Paid coaching".
+#
+# show: false        → hide the tab (keep old events here for reference)
+# featured: true     → the "Next big one" countdown in Run Club + the race shortcut in the Goal Finder.
+#                      Only one event should be featured.
+# finder_min_level   → the Goal Finder suggests this event's plans when the runner picks this race date
+#                      and is at least this level: 0 never run · 1 runs 2-3 km · 2 runs 5K · 3 runs 10K+ · 4 finished a half/full
+# cards[].plan       → a plan file name from content/plans/ (without .yaml). The plan must have "event:" set to this event's id.
+# cards[].style      → red or dark
+# ─────────────────────────────────────────────────────────────
+
+- id: navy-2026
+  name: IndianOil WNC Navy Half Marathon 2026
+  tab_label: Navy Run
+  date: 2026-11-22
+  when_where: Sunday 22 November · South Mumbai
+  notice: "Registrations closed on 15 November. These free plans are for runners already entered: a race-week plan to sharpen and arrive fresh, plus a recovery week after."
+  after_race: see recovery week          # small text under "Done" once race day has passed
+  finder_min_level: 2
+  show: true
+  cards:
+    - plan: navy-5k
+      big: 5K
+      title: Frigate Run · race-week plan
+      text: Wed 18 to Sun 22 Nov, then recovery week. Includes race-morning timeline, breakfast and hydration.
+      style: red
+    - plan: navy-10k
+      big: 10K
+      title: Destroyer Run · race-week plan
+      text: Wed 18 to Sun 22 Nov, then recovery week. Pacing for 10 km, warm-up and race-morning routine.
+      style: dark
+
+- id: tmm-2027
+  name: Tata Mumbai Marathon 2027
+  short_name: Tata Mumbai Marathon
+  tab_label: TMM 2027
+  date: 2027-01-17
+  when_where: Sunday 17 January · Mumbai
+  notice: An 8-week countdown that starts Monday 23 November and ends on race day. For runners already in training. New to the distance? Get a customised plan instead.
+  after_race: ""
+  finder_min_level: 3
+  featured: true
+  featured_text: Sunday 17 January 2027. Get the free 8-week countdown for the 21K or 42K.
+  show: true
+  cards:
+    - plan: tmm-21k
+      big: 21K
+      title: Half marathon · 8-week countdown
+      text: Start if you already run 30+ km a week with a 12 km long run. Peak long run 19 km, two-week taper.
+      style: dark
+    - plan: tmm-42k
+      big: 42K
+      title: Marathon · 8-week countdown
+      text: Start if you already run 40+ km a week with a 21 km long run. Peak long run 32 km, three-week taper, race fuelling plan.
+      style: red

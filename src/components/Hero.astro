@@ -1,0 +1,30 @@
+---
+import Mark from "./Mark.astro";
+import { heading } from "../lib/content.mjs";
+const { c } = Astro.props;
+const h = c.home.hero;
+const titleHtml = h.title_lines.map((l, i) => (i === h.title_lines.length - 1 ? heading(l) : heading(l).replace(/<span class="dot">.<\/span>$/, ""))).join("<br>");
+---
+<section class="hero b-black">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">{h.eyebrow}</p>
+      <h1 set:html={titleHtml} />
+      <p class="lede">{h.lede}</p>
+      <div class="cta-row">
+        <a class="btn" href="#plans">{h.primary_button}</a>
+        <button class="btn btn-ghost" type="button" data-start>{c.home.start_button}</button>
+      </div>
+    </div>
+    <div class="tile" aria-hidden="true">
+      <Mark />
+      <span class="handle">{c.site.contact.instagram_handle}</span>
+      <span class="wm">{c.site.name} <span style="color:var(--black)">.</span></span>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="proof">
+      {h.proof.map((p) => <div><strong>{p.title}</strong><span>{p.text}</span></div>)}
+    </div>
+  </div>
+</section>

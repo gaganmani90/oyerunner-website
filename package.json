@@ -1,0 +1,30 @@
+{
+  "name": "oyerunner-website",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Oye Runner website: free running plans, race plans and coaching by Coach Mayank Mani Kaushik.",
+  "scripts": {
+    "check": "node scripts/check-content.mjs",
+    "pdfs": "node scripts/make-pdfs.mjs",
+    "predev": "npm run check && npm run pdfs",
+    "dev": "astro dev",
+    "prebuild": "npm run check && npm run pdfs",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@fontsource/jost": "^5.3.0",
+    "astro": "^7.4.13",
+    "pdfkit": "^0.20.2",
+    "qrcode": "^1.5.4",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5"
+  }
+}

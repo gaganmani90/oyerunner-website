@@ -1,0 +1,48 @@
+---
+// Home page. All text comes from the content/ folder; this file only arranges the sections.
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import WhyRun from "../components/WhyRun.astro";
+import Plans from "../components/Plans.astro";
+import GoalFinder from "../components/GoalFinder.astro";
+import Coach from "../components/Coach.astro";
+import Club from "../components/Club.astro";
+import StartBand from "../components/StartBand.astro";
+import AppInstall from "../components/AppInstall.astro";
+import Faq from "../components/Faq.astro";
+import Footer from "../components/Footer.astro";
+import Modals from "../components/Modals.astro";
+import { loadContent } from "../lib/content.mjs";
+
+const c = loadContent();
+const base = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+
+// Settings the in-page script needs (plans themselves load from data/plans.json).
+const config = {
+  base,
+  email: c.site.contact.email,
+  coach: c.site.coach.short_name,
+  formEndpoint: c.site.lead_form_endpoint,
+  liveHost: new URL(c.site.url).hostname.replace(/^www\./, ""),
+  events: c.events.map((e) => ({ id: e.id, name: e.short_name || e.name, date: e.date, minLevel: e.finder_min_level })),
+};
+---
+<Base site={c.site}>
+  <Header c={c} />
+  <main id="top">
+    <Hero c={c} />
+    <WhyRun c={c} />
+    <Plans c={c} />
+    <GoalFinder c={c} />
+    <Coach c={c} />
+    <Club c={c} />
+    <StartBand c={c} />
+    <AppInstall c={c} />
+    <Faq c={c} />
+  </main>
+  <Footer c={c} />
+  <Modals c={c} />
+  <script type="application/json" id="oye-config" set:html={JSON.stringify(config)} />
+  <script src="../scripts/site.js"></script>
+</Base>

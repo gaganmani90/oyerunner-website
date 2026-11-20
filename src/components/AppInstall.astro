@@ -1,0 +1,30 @@
+---
+import Mark from "./Mark.astro";
+import { heading, rich } from "../lib/content.mjs";
+const { c } = Astro.props;
+const a = c.home.app;
+---
+<section class="b-black" id="app">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">{a.eyebrow}</p>
+      <h2 class="h2" set:html={heading(a.heading)} />
+      {a.sub && <p class="sub">{a.sub}</p>}
+    </div>
+    <div class="event-grid">
+      <div class="event red">
+        <span class="ico"><Mark /></span>
+        <h3>iPhone and iPad</h3>
+        <div class="steps" style="margin-top:4px">
+          {a.iphone_steps.map((t, i) => <div class="step"><b>{i + 1}</b><p set:html={rich(t)} /></div>)}
+        </div>
+      </div>
+      <div class="event">
+        <span class="ico"><Mark /></span>
+        <h3>Android and computer</h3>
+        <p set:html={rich(a.android_text)} />
+        <div class="bottom"><button class="btn" type="button" id="install-btn">{a.install_button}</button><span class="fine" id="install-note"></span></div>
+      </div>
+    </div>
+  </div>
+</section>

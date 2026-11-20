@@ -1,0 +1,128 @@
+---
+// Plans hub: "Free plans" tab, one tab per race event, and "Paid coaching" tab (with optional UPI payment).
+import QRCode from "qrcode";
+import Mark from "./Mark.astro";
+import { heading, rupees, priceLabel, upiLink } from "../lib/content.mjs";
+
+const { c } = Astro.props;
+const h = c.home.plans;
+const distances = ["5k", "10k", "21k", "42k"].filter((d) => c.plans.some((p) => p.level && p.distance === d));
+const daysTo = (iso) => Math.round((new Date(iso + "T06:00:00") - new Date(new Date().toDateString())) / 86400000);
+
+// Paid items, each with a key used by the UPI payment sheet.
+const groups = [
+  { key: "once", ...c.pricing.one_time, per: "one-time" },
+  { key: "subs", ...c.pricing.subscriptions },
+];
+const qr = {};
+for (const g of groups)
+  for (const [i, it] of g.items.entries()) {
+    it.key = `${g.key}-${i}`;
+    it.label = priceLabel(it);
+    if (c.upiEnabled) {
+      it.upi = upiLink(c.site.payments, it.price, `Oye Runner ${it.name}`);
+      qr[it.key] = await QRCode.toString(it.upi, { type: "svg", margin: 1, errorCorrectionLevel: "M" });
+    }
+  }
+---
+<section class="b-black" id="plans" data-inside={h.plan_inside}>
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">{h.eyebrow}</p>
+      <h2 class="h2" set:html={heading(h.heading)} />
+      {h.sub && <p class="sub">{h.sub}</p>}
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Plan types">
+      <button class="tab" role="tab" id="tab-free" aria-controls="free" aria-selected="true" data-tab-name="free">{h.free_tab}</button>
+      {c.events.map((e) => (
+        <button class="tab" role="tab" id={"tab-" + e.id} aria-controls={e.id} aria-selected="false" data-tab-name={e.id}>
+          {e.tab_label}<small>{new Date(e.date + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short" })}</small>
+        </button>
+      ))}
+      <button class="tab" role="tab" id="tab-paid" aria-controls="paid" aria-selected="false" data-tab-name="paid">{h.paid_tab}</button>
+    </div>
+
+    <!-- Free plans -->
+    <div class="panel" role="tabpanel" id="free" aria-labelledby="tab-free">
+      <div class="seg-row">
+        <div class="grp"><span class="lbl">Level</span>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="fl" id="fl-intermediate" value="intermediate" checked /><span>Intermediate</span></label>
+            <label class="chip"><input type="radio" name="fl" id="fl-beginner" value="beginner" /><span>Beginner · never run</span></label>
+          </div>
+        </div>
+        <div class="grp"><span class="lbl">Distance</span>
+          <div class="chips">
+            {distances.map((d) => (
+              <label class="chip"><input type="radio" name="fd" id={"fd-" + d} value={d} checked={d === "10k"} /><span>{d.toUpperCase()}</span></label>
+            ))}
+          </div>
+        </div>
+        <div class="grp"><span class="lbl">Weeks</span><div class="chips" id="fw"></div></div>
+      </div>
+      <div id="free-card"><p class="fine">Loading plans…</p></div>
+    </div>
+
+    <!-- One panel per race event -->
+    {c.events.map((e) => {
+      const n = daysTo(e.date);
+      return (
+        <div class="panel" role="tabpanel" id={e.id} aria-labelledby={"tab-" + e.id} hidden>
+          <div class="ev-head">
+            <div><p class="eyebrow">{e.name}</p><h3>{e.when_where}</h3></div>
+            <div class="count" data-countdown={e.date} data-after={e.after_race}>{Math.max(n, 0)}<small>days to go</small></div>
+          </div>
+          {e.notice && <p class="notice">{e.notice}</p>}
+          <div class="event-grid">
+            {e.cards.map((card) => (
+              <div class={"event" + (card.style === "red" ? " red" : "")}>
+                <span class="ico"><Mark /></span>
+                <span class="big">{card.big}</span>
+                <h3>{card.title}</h3>
+                <p>{card.text}</p>
+                <div class="bottom">
+                  <button class={"btn" + (card.style === "red" ? " btn-white" : "")} type="button" data-dl={card.plan}>Download free PDF</button>
+                  <button class={"btn btn-ghost" + (card.style === "red" ? " on-red" : "")} type="button" data-view={card.plan}>Preview</button>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div id={e.id + "-preview"} style="margin-top:16px"></div>
+        </div>
+      );
+    })}
+
+    <!-- Paid coaching -->
+    <div class="panel" role="tabpanel" id="paid" aria-labelledby="tab-paid" hidden>
+      {groups.map((g) => (
+        <Fragment>
+          <h3 class="h3sec">{g.heading}</h3>
+          <div class={g.key === "once" ? "price-grid" : "sub-grid"}>
+            {g.items.map((it) => (
+              <div class={"price" + (it.featured ? " feat" : "")}>
+                {it.tag && <span class="tag">{it.tag}</span>}
+                <h4>{it.name}</h4>
+                {it.duration && <span class="fine">{it.duration}</span>}
+                <div class="amt">Rs. {rupees(it.price)}<small> {it.per ? "/ " + it.per : "one-time"}</small></div>
+                <ul>{it.features.map((f) => <li>{f}</li>)}</ul>
+                <div class="actions">
+                  {c.upiEnabled && (
+                    <button class={"btn" + (it.featured ? " btn-white" : "")} type="button" data-pay={it.key}
+                      data-name={it.name} data-amount={it.price} data-per={it.per || ""} data-label={it.label} data-req={it.request} data-upi={it.upi}>
+                      Pay Rs. {rupees(it.price)} by UPI
+                    </button>
+                  )}
+                  <button class={"btn" + (c.upiEnabled ? " btn-ghost" + (it.featured ? " on-red" : "") : it.featured ? " btn-white" : "")} type="button"
+                    data-start data-req={it.request} data-plan={it.label}>{g.button}</button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Fragment>
+      ))}
+      <p class="fine" style="margin-top:18px">{c.upiEnabled ? c.pricing.note_with_upi : c.pricing.note}</p>
+      {Object.entries(qr).map(([k, svg]) => <template id={"qr-" + k} set:html={svg} />)}
+    </div>
+  </div>
+</section>
